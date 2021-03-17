@@ -40,11 +40,13 @@ int main() {
         graphList[fromVertice].push_back(toVertice);
     }
 
-    //sort each of the list in adjacency list
+    //Sort vertices
     for(int i = 0; i < vertices; i++) {
         sort(graphList[i].begin(), graphList[i].end());
     }
 
+    //Display results, need to loop through both to get full
+    results
     for(int i = 0; i < vertices; i++) {
         tempSize = graphList[i].size();
         cout << i ;
@@ -52,7 +54,8 @@ int main() {
     for(int j = 0; j < tempSize; j++) {
         cout << "->" << graphList[i][j];
     }
-    cout << endl;
+    
+    cout << "" << endl;
 }
 
     return(0);
